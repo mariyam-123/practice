@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 100px;
+        }
+
+        .container1 {
+            /* background-color: red; */
+            height: 1000px;
+        }
+
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        #heading {
+            /* padding: 20px; */
+            position: relative;
+            top: 20px;
+            left: 50px;
+            display: inline;
+
+
+        }
+
+        #navbar {
+            background-color:  rgb(73, 76, 129);
+            color: white;
+            height: 70px;
+        }
+
+        #navbar ul {
+            display: flex;
+        }
+
+        #navbar ul li {
+            position: relative;
+            left: 340px;
+            top: -23px;
+            padding: 20px;
+            list-style: none;
+            font-size: 18px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+        }
+
+        #navbar ul li:hover {
+            /* background-color: rgb(112, 106, 106); */
+            border-radius: 10px;
+            border: 2px solid rgb(19, 20, 20);
+            border-color: rgb(0, 0, 0);
+            /* color: rgb(24, 22, 22); */
+            /* animation: nav 9s linear; */
+        }
+
+        #navbar ul li a {
+            color: white;
+            text-decoration: none;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+         
+        #srcbtn {
+            position: absolute;
+            left: 900px;
+            top: 23px;
+            
+        }
+
+        .input {
+            height: 25px;
+            width: 250px;
+            border-radius: 10px;
+        }
+
+        #btn {
+            height: 30px;
+            width: 90px;
+            border-radius: 10px;
+            border: none;
+            /* color: white; */
+        }
+
+        #btn:hover {
+            /* border: 2px solid rgb(61, 53, 53); */
+            background-color: rgb(37, 40, 70);
+            color: white;
+            border: none;
+            
+        }
+
+        #container {
+            width: 100%;
+            height: 553px;
+            position: absolute;
+            top: 70px;
+            left: 0px;
+            background-image: url('img/nat.jfif');
+            /* background-color: black; */
+            background-repeat: no-repeat;
+            /* transform: translate(-50%,-50%); */
+            background-size: 2500px 9600px;
+            /* animation-name: marry;
+      animation-duration: 4s;
+      animation-timing-function: infinite;
+  */
+            animation: marry 6s infinite linear;
+            /* box-shadow: 2px 3px rgb(60, 49, 167); */
+        }
+
+        /* #img{
+  height: 500px;
+  position: absolute;
+  left: 200px;
+  top: 100px;
+} */
+        @keyframes marry {
+            0% {
+
+                background-image: url('img/slide4.jfif');
+
+            }
+
+            35% {
+                background-image: url('img/nat2.jpg');
+            }
+
+            75% {
+                background-image: url('img/nat3.webp');
+            }
+
+        }
+
+        .marq {
+            font-size: 40px;
+            position: relative;
+            top: 120px;
+            /* left: 530px; */
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .text {
+            height: 50px;
+            width: 500px;
+            position: relative;
+            left: 460px;
+            top: 130px;
+            /* background-color: tomato; */
+            justify-self: center;
+            /* text-align: center; */
+        }
+
+        .signup {
+            height: 40px;
+            width: 200px;
+            position: relative;
+            left: 600px;
+            top: 160px;
+            /* color: black; */
+            /* background-color: rgb(255, 255, 255); */
+            border-radius: 10px;
+            font-size: 20px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+
+        }
+
+        .signup a {
+            text-decoration: none;
+            border: none;
+            color: rgb(8, 8, 8);
+        }
+
+        .signup:hover {
+            background-color: rgb(37, 40, 70);
+            color: rgb(255, 254, 254);
+            border: none;
+        }
+
+        .signup a:hover {
+            color: white;
+        }
+
+        .container {
+            background-color: rgb(189, 189, 243);
+            /* opacity: 90%; */
+            position: relative;
+            top: 630px;
+        }
+
+        .footer {
+            position: relative;
+            margin-left: 20px;
+            margin-top: 10px;
+            /* left: 10px; */
+            background-color: rgb(189, 189, 243);
+            height: 200px;
+        }
+
+        #footer {
+            /* background-color: rgb(189, 189, 243); */
+            position: relative;
+            /* margin-top: 30px; */
+            top: 15px;
+            font-size: 20px;
+            margin-left: 10px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .adrs {
+            position: relative;
+            /* margin-top: 30px; */
+            top: 40px;
+        }
+
+        #div {
+            position: relative;
+            /* margin-top: 100px; */
+            top: 70px;
+        }
+
+        .opening {
+            display: inline;
+            float: right;
+            position: relative;
+            margin-right: 700px;
+            top: -100px;
+        }
+
+        .h4 {
+            position: relative;
+            top: 30px;
+        }
+
+        .h6 {
+            position: relative;
+            top: 60px;
+        }
+
+        .h7 {
+            position: relative;
+            top: 70px;
+        }
+
+        .h8 {
+            position: relative;
+            top: 80px;
+        }
+
+        .box {
+            float: right;
+            position: relative;
+            bottom: 70px;
+            left: 820px;
+        }
+
+        .box1 {
+            /* position: relative;
+    top: 20px; */
+        }
+
+        .box2 {
+            position: relative;
+            top: 20px;
+            
+        }
+
+        .box3 {
+            position: relative;
+            top: 40px;
+        }
+
+        .end {
+            background-color: rgb(73, 76, 129);
+            height: 20px;
+            position: relative;
+            top: 630px;
+            /* bottom: -10px; */
+            text-align: center;
+            color: white;
+        }
+
+        .input {
+            height: 23px;
+            width: 200px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .btn2 {
+            height: 23px;
+            width: 100px;
+            border: none;
+            border-radius: 5px;
+            color: rgb(2, 2, 2);
+        }
+
+        .btn2:hover {
+            background-color: #3b6083;
+            color: rgb(247, 244, 244)
+        }
+
+        .insta {
+            height: 30px;
+            width: 40px;
+            border-radius: 10px;
+        }
+
+        .fb {
+            height: 30px;
+            width: 40px;
+            border-radius: 10px;
+        }
+
+        .twit {
+            height: 30px;
+            width: 40px;
+            border-radius: 10px;
+        }
+
+        .link {
+            height: 30px;
+            width: 40px;
+            border-radius: 10px;
+        }
+
+        .google {
+            height: 30px;
+            width: 40px;
+            border-radius: 10px;
+        }
+
+        .services {
+            border: 2px solid black;
+            height: 80px;
+            width: 200px;
+            text-align: center;
+            position: relative;
+            top: 450px;
+            margin-left: 600px;
+            border-radius: 10px;
+            /* left: 500px; */
+        }
+
+        .services h1 {
+            position: relative;
+            top: 20px;
+        }
+
+        .container3 {
+            display: flex;
+            width: 200px;
+            position: relative;
+            left: 100px;
+            top: 500px;
+        }
+
+        .item2 {
+            border-radius: 10px;
+            position: relative;
+            left: 15px;
+            top: 22px;
+            height: 288px;
+            width: 290px;
+        }
+
+        .item3 {
+            height: 80px;
+            /* background-color: aqua; */
+            position: relative;
+            top: 60px;
+            left: 20px;
+            border-radius: 10px;
+            text-align: center;
+            border: 2px solid black;
+            /* top: 200px; */
+        }
+
+        .item3 h2 {
+            position: relative;
+            top: 10px;
+        }
+
+        .item3 h4 {
+            position: relative;
+            top: 10px;
+            font-size: 12px;
+        }
+
+        .item3:hover {
+            background-color: rgb(84, 88, 148);
+            color: white;
+        }
+
+        .item4 {
+            position: relative;
+            left: 150px;
+            border-radius: 10px;
+            
+
+        }
+
+        .item5 {
+            border-radius: 10px;
+            height: 290px;
+            width: 250px;
+            position: relative;
+            top: 20px;
+            left: 10px;
+        }
+
+        .item6 {
+            height: 80px;
+            width: 300px;
+            /* background-color: aqua; */
+            position: relative;
+            top: 60px;
+            left: -10px;
+            border-radius: 10px;
+            text-align: center;
+            border: 2px solid black;
+            /* top: 200px; */
+        }
+
+        .item6 h2 {
+            position: relative;
+            top: 10px;
+        }
+
+        .item6:hover {
+            background-color:rgb(84, 88, 148);
+            color: white;
+        }
+
+        .item6 h4 {
+            position: relative;
+            top: 10px;
+            font-size: 12px;
+        }
+
+        .item8 {
+            height: 290px;
+            width: 290px;
+            border-radius: 20px;
+            position: relative;
+            left: 117px;
+            top: 20px;
+            
+            height: 290px;
+            width: 300px;
+        }
+
+        .item9 {
+            height: 70px;
+            width: 290px;
+            /* background-color: aqua; */
+            position: relative;
+            left: 240px;
+            top: 65px;
+            border-radius: 10px;
+            text-align: center;
+            border: 2px solid rgb(19, 19, 19);
+            /* top: 200px; */
+        }
+
+        .item9 h2 {
+            position: relative;
+            top: 10px;
+        }
+
+        .item9:hover {
+            background-color: rgb(84, 88, 148);
+            color: white;
+        }
+
+        .item9 h4 {
+            position: relative;
+            top: 10px;
+            font-size: 12px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container1">
+        <nav id="navbar">
+            <h1 id="heading"> Brand Name</h1>
+            <ul class="navclass">
+                <li class="navli"><a> Home</a></li>
+                <li class="navli"><a href="about.html" class="active" > About</a></li>
+                <li class="navli"><a> Services</a></li>
+            </ul>
+            <div id="srcbtn">
+                <input type="text" class="input">
+                <button id="btn"><a> search </a></button>
+            </div>
+        </nav>
+        <div id="container">
+
+            <div class="contact">
+                <marquee behavior="scroll" direction="right" scrollamount="22" class="marq">
+                    WE ARE HIRING
+                </marquee>
+                <div class="text">
+                    <h3>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni placeat, sunt quaerat sequi
+                        alias
+                        cum
+                        quae minus nemo </h3>
+                </div>
+                <button class="signup"> <a href="signup.html" target="blank"> SIGN UP WITH US </a> </button>
+            </div>
+            <div class="services">
+                <a>
+                    <h1>SERVICES</h1>
+                </a>
+            </div>
+            <div class="container3">
+                <div class="count">
+                    <div class="item1">
+                        <div class="item2"> <img src="img/shorts.jpg" class="item2" height="350px" width="300px"> </div>
+                        <div class="item3">
+                            <h2> Shorts Wear </h2>
+                            <h4>Lorem ipsum dolor sit amet elit. Facere velit omnis voluptate
+                                ad qui reiciendis </h4>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="count2">
+                    <div class="item4">
+                        <div class="item5"> <img src="img/indian2.avif" class="item5" height="350px" width="300px"> </div>
+                        <div class="item6">
+                            <h2> Indian Dresses </h2>
+                            <h4>Lorem ipsum dolor sit amet elit. Facere velit omnis voluptate
+                                ad qui reiciendis </h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="count3">
+                    <div class="item7">
+                        <div class="item8"> <img src="img/western.jpg" class="item8" height="350px" width="300px"> </div>
+                        <div class="item9">
+                            <h2> Western Dresses </h2>
+                            <h4>Lorem ipsum dolor sit amet elit. Facere velit omnis voluptate
+                                ad qui reiciendis </h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <footer class="footer">
+                    <div id="footer">
+                        Brand Name
+                    </div>
+                    <div class="adrs">
+                        <h5>Address: 100 tenth avenue ,new york city,ny1001<br>for booking : (044) 0173 </h5>
+                    </div>
+                    <div id="div">
+                        <a href="https://facebook.com"> <img src="img/fb2.jpg" height="30px" class="fb"></a>
+                        <a href="https://twitter.com"> <img src="img/twitter.jpg" height="30px" class="twit"></a>
+                        <a href="https://hangout.com"> <img src="img/linkin.jpg" height="30px" class="link"></a>
+                        <a href="https://google.com"> <img src="img/g+.png" height="30px" class="google"></a>
+                        <a href="https://instagram.com"> <img src="img/insta.png" height="26px" class="insta"></a>
+                    </div>
+                    <div class="opening">
+                        <div class="h4">
+                            <h4>OPENING HOURS </h4>
+                        </div>
+                        <div class="h6">
+                            <h6>MONDAY - FRIDAY ; 11:20 AM-2:00PM </h6>
+                        </div>
+                        <div class="h7">
+                            <h6>SATURDAY - SUNDAY ; 4:30 AM-10:00PM </h6>
+                        </div>
+                        <div class="h8">
+                            <h6>MONDAY - FRIDAY ; 5:30 AM-11:00PM </h6>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="box1">
+                            <h3> SUBSCRIBE TO OUR CONTENTS
+                        </div>
+                        <div class="box2"> <input type="text" class="input"> <button class="btn2">SUBSCRIBE</button>
+                        </div>
+                        <div class="box3">
+                            <h6> Lorem ipsum dolor sit tetur adipisicing elit Quis, esse, obcaecati ut officia
+                            </h6>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+            <div class="end"> care@brand,com </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
