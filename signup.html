@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup</title>
+    <script src="jquery-3.6.0.min.js">    </script>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        body {
+            background-color: rgb(73, 76, 129);
+        }
+
+        .form {
+            position: relative;
+            left: 60px;
+        }
+
+        #container {
+            /* background-color: antiquewhite; */
+            background-color: rgb(214, 215, 245);
+            width: 700px;
+            height: 570px;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            left: 360px;
+            top: 30px;
+            border: 2px solid rgb(17, 17, 17);
+            border-radius: 30px;
+        }
+
+        .heading {
+            position: relative;
+            left: 140px;
+            font-size: 20px;
+            padding: 40px;
+            color: rgb(8, 10, 54);
+        }
+
+        .first {
+            /* background-color: bisque; */
+            padding: 20px;
+            position: relative;
+            left: 80px;
+            color: rgb(73, 76, 129);
+            /* height: 40px; */
+        }
+
+        .last {
+            /* background-color: bisque; */
+            padding: 20px;
+            position: relative;
+            left: 80px;
+            color: rgb(73, 76, 129);
+        }
+
+        .email {
+            /* background-color: bisque; */
+            padding: 20px;
+            position: relative;
+            left: 80px;
+            color: rgb(73, 76, 129);
+        }
+
+        .number {
+            /* background-color: bisque; */
+            padding: 20px;
+            position: relative;
+            left: 80px;
+            color: rgb(73, 76, 129);
+        }
+
+
+
+        .inp2 {
+            height: 30px;
+            width: 300px;
+            border-radius: 8px;
+            /* padding: 10px; */
+            /* margin: 10px; */
+        }
+
+        .inp1 {
+            height: 30px;
+            width: 300px;
+            border-radius: 8px;
+        }
+
+        .inp3 {
+            height: 30px;
+            width: 300px;
+            position: relative;
+            left: 13px;
+            border-radius: 8px;
+        }
+
+        .inp4 {
+            height: 30px;
+            width: 300px;
+            position: relative;
+            left: 16px;
+            border-radius: 8px;
+        }
+
+        .btn {
+            /* background-color: rgb(36, 30, 22); */
+            padding: 40px;
+            display: flex;
+            position: relative;
+            left: 70px;
+            /* justify-content: space-evenly */
+        }
+
+        .submit {
+            height: 40px;
+            width: 200px;
+            border-radius: 8px;
+            font-size: 20px;
+            position: relative;
+            padding: 10px;
+            margin: 10px;
+            left: -40px;
+            color: rgb(73, 76, 129);
+            border: 2px solid rgb(12, 12, 12);
+        }
+
+        .reset {
+            height: 40px;
+            width: 200px;
+            border-radius: 8px;
+            font-size: 20px;
+            padding: 10px;
+            margin: 10px;
+            position: relative;
+            left: -30px;
+            color: rgb(73, 76, 129);
+            border: 2px solid rgb(15, 15, 15);
+        }
+
+        .submit:hover {
+            background-color: rgb(73, 76, 129);
+            color: white;
+            /* border: 2px solid pink; */
+        }
+
+        .reset:hover {
+            background-color: rgb(73, 76, 129);
+            color: white;
+            /* border: 2px solid pink; */
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div class="heading">
+            <h1> SIGN UP WITH US</h1>
+        </div>
+        <form action="submit">
+            <div class="form">
+                <div class="first">
+                    <label>First Name
+                        <input type="text" value="" required class="inp1">
+                    </label>
+                </div>
+                <div class="last">
+                    <label>Last Name
+                        <input type="text" class="inp2" value="" required>
+                    </label>
+                </div>
+
+                <div class="email">
+                    <label> Email Id
+                        <input type="text" class="inp3" value="" required>
+                    </label>
+                </div>
+                <div class="number">
+                    <label> Number
+                        <input type="number" class="inp4" value="">
+                    </label>
+                </div>
+                <div class="btn">
+                    <div>
+                        <input type="submit" class="submit" id="submit">
+                    </div>
+                    <div>
+                        <input type="reset" class="reset">
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+<script>
+    $('#submit').click(function () {
+        alert('your form has been sebmitted')
+    })
+
+</script>
+
+</html>

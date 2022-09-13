@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.6.0.min.js">    </script>
+
+    <style>
+        * {
+            margin: 0%;
+            padding: 0%;
+        }
+
+        body {
+            background-color: rgb(230, 231, 248);
+            height: 100%;
+        }
+
+        /* #container {
+            width: 100%;
+            height: 553px;
+            position: absolute;
+            top: 70px;
+            left: 0px;
+            background-image: url('image.jpg');
+            /* background-color: black; */
+        /* background-repeat: no-repeat; */
+        /* transform: translate(-50%,-50%); */
+        /* background-size: 2500px 9600px; */
+        /* animation-name: marry;
+      animation-duration: 4s;
+      animation-timing-function: infinite;
+  */
+        /* animation: marry 6s infinite linear; */
+        /* box-shadow: 2px 3px rgb(60, 49, 167); */
+        /* } */
+
+        /* @keyframes marry {
+            0% {
+
+                background-image: url('image.jpg');
+
+            }
+
+            35% {
+                background-image: url('image2.jpg');
+            }
+
+            75% {
+                background-image: url('image3.jpg');
+            }
+
+        }  */
+
+        .heading {
+            display: flex;
+            font-size: 20px;
+            background-color: rgb(230, 231, 248);
+            justify-content: center;
+            position: relative;
+            top: 20px;
+        }
+
+        .text {
+            /* color: rgb(36, 34, 33); */
+            font-size: 15px;
+            display: flex;
+            /* background-color: aquamarine; */
+            justify-content: center;
+            height: 190px;
+            width: 1100px;
+            position: relative;
+            left: 100px;
+            top: 10px;
+        }
+
+        .text1 {
+            /* background-color: blue; */
+            width: 92px;
+            height: 60px;
+            text-align: center;
+            position: relative;
+            left: 40px;
+            top: 30px;
+            border: 2px solid rgb(17, 16, 16);
+            border-radius: 10px;
+            border-top-left-radius: 30px;
+            box-shadow: 8px 6px rgb(133, 133, 180);
+
+            line-height: 26px;
+            /* position: relative;
+       left: 100px; */
+        }
+
+        .text2 {
+
+            /* background-color: rgb(226, 59, 190); */
+            width: 800px;
+            height: 40px;
+            text-align: center;
+            position: relative;
+            left: 130px;
+            top: 20px;
+            line-height: 22px;
+            animation: txt 4s infinite linear;
+        }
+
+        @keyframes txt {
+            0% {
+                position: relative;
+                left: 100px;
+            }
+
+        }
+
+        .img {
+            position: relative;
+            left: 160px;
+            height: 400px;
+            width: 1100px;
+            border-radius: 10px;
+
+        }
+
+
+        .cont {
+            display: flex;
+        }
+
+        .txt {
+            /* background-color: firebrick; */
+            height: 320px;
+            width: 390px;
+            position: relative;
+            left: 50px;
+            top: 30px;
+            border-radius: 10px;
+            border-top-left-radius: 120px;
+            /* box-shadow: 10px 9px rgb(252, 152, 127); */
+            animation: text 2s infinite linear;
+
+        }
+
+        @keyframes text {
+            0% {
+                position: relative;
+                left: 100px;
+            }
+
+            25% {
+                position: relative;
+                right: 200px;
+            }
+        }
+
+        .img2 {
+            /* background-color: rgb(81, 99, 93); */
+            height: 290px;
+            width: 550px;
+            border-radius: 10px;
+            position: relative;
+            left: 200px;
+            top: 170px;
+            border-top-left-radius: 120px;
+            animation: img2 2s infinite linear;
+        }
+
+        @keyframes img2 {
+            0% {
+                position: relative;
+                left: 100px;
+            }
+
+            25% {
+                position: relative;
+                right: 100px;
+            }
+        }
+
+        .imgbox {
+            display: inline;
+            position: relative;
+            top: 350px;
+        }
+
+        .img3 {
+            /* background-color: blue; */
+            border-radius: 50px;
+            height: 250px;
+            width: 300px;
+            position: relative;
+            left: 8px;
+        }
+
+        .img4 {
+            /* background-color: rgb(36, 168, 230); */
+            height: 240px;
+            width: 260px;
+            position: relative;
+            top: 10px;
+            left: 8px;
+            border-radius: 50px;
+        }
+
+        .img5 {
+            /* background-color: rgb(78, 4, 50); */
+            height: 300px;
+            width: 300px;
+            position: relative;
+            left: 160px;
+            top: -200px;
+            border-radius: 50px;
+            animation: img 2s infinite linear;
+        }
+
+        @keyframes img {
+            0% {
+                position: relative;
+                top: 10px;
+            }
+
+        }
+
+        .team {
+            /* background-color: rgb(219, 24, 24); */
+            height: 500px;
+            width: 680px;
+            position: relative;
+            left: 650px;
+            top: -440px;
+            text-align: center;
+            border: 2px solid black;
+            border-radius: 20px;
+            border-top-left-radius: 180px;
+            box-shadow: 10px 7px rgb(133, 133, 180);
+        }
+
+        .team h3 {
+            position: relative;
+            top: 80px;
+            line-height: 30px;
+            font-size: 15px;
+            animation: img3 2s infinite linear;
+        }
+
+
+        @keyframes img3 {
+            0% {
+                position: relative;
+                top: 100px;
+            }
+
+        }
+
+        .team h1 {
+            position: relative;
+            top: 40px;
+
+
+        }
+
+        #bg {
+            height: 220px;
+            width: 1350px;
+            background-color: #99ccff;
+
+            margin-top: 300px;
+            margin-left: 288px;
+
+        }
+
+        .container {
+            background-color:  rgb(165, 165, 223);
+            opacity: 90%;
+        }
+
+        .footer {
+            position: relative;
+            margin-left: 20px;
+            /* left: 10px; */
+            background-color: rgb(165, 165, 223);
+            height: 170px;
+        }
+
+        #footer {
+            /* background-color: rgb(189, 189, 243); */
+            position: relative;
+            /* margin-top: 30px; */
+            top: 15px;
+            font-size: 20px;
+            margin-left: 10px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+        .adrs {
+            position: relative;
+            /* margin-top: 30px; */
+            top: 40px;
+        }
+
+        #div {
+            position: relative;
+            /* margin-top: 100px; */
+            top: 70px;
+        }
+
+        .opening {
+            display: inline;
+            float: right;
+            position: relative;
+            margin-right: 700px;
+            top: -100px;
+        }
+
+        .h4 {
+            position: relative;
+            top: 30px;
+        }
+
+        .h6 {
+            position: relative;
+            top: 60px;
+        }
+
+        .h7 {
+            position: relative;
+            top: 70px;
+        }
+
+        .h8 {
+            position: relative;
+            top: 80px;
+        }
+.box{
+    float:right;
+    position: relative;
+    bottom: 70px;
+    left: 820px;
+}
+.box1{
+    /* position: relative;
+    top: 20px; */
+}
+.box2{
+    position: relative;
+    top: 20px;
+}
+.box3{
+    position: relative;
+    top: 40px;
+}
+.fb{
+    border-radius: 10px;
+}
+.twit{
+    border-radius: 10px;
+}
+.hang{
+    border-radius: 10px;
+}
+.google{
+    border-radius: 10px;
+}
+.insta{
+    border-radius: 10px;
+}
+        .end {
+            background-color:rgb(73, 76, 129);
+            height: 20px;
+            position: relative;
+            /* bottom: -10px; */
+            text-align: center;
+            color: white;
+        }
+        .input{
+            height: 23px;
+            width: 200px;
+            border: none;
+            border-radius: 5px;
+        }
+        .btn{
+            height: 23px;
+            width: 100px;
+            border: none;
+            border-radius: 5px;
+        }
+        .btn:hover{
+        background-color: #3b6083;
+        color: white;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="heading">
+
+        <h1>ABOUT US</h1>
+    </div>
+    <div id="container">
+        <div class="text">
+            <div class="text1"> About us and our team</div>
+            <div class=" text2"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam cupiditate alias enim
+                dolorum,
+                nobis eligendi, atque mollitia magnam, voluptatem eum totam assumenda at corrupti perspiciatis molestias
+                et
+                cum
+                ab! Qui?
+
+                Isdpsam aperiam eius doloribus laboriosam aliquid in? Rerum molestiae, nesciunt impedit esse temporibus
+
+                illo necessitatibus vitae sit, omnis vel? Enim eaque aspernatur inventore eveniet laboriosam
+                digniss
+                nostrum ducimus quidem.
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <img src="img/img7.jpg" class="img">
+    </div>
+    <div class="cont">
+        <div class="txt"> <img src="img/qts.webp" class="txt" height="300px"> </div>
+        <div class="img2"> <img src="img/img7.jpg" class="img2"> </div>
+    </div>
+    <div class="imgbox">
+        <div class="img3"> <img src="img/img4.jpg" class="img3"> </div>
+        <div class="img4"> <img src="img/img5.webp" class="img4"></div>
+        <div class="img5"><img src="img/img8.jpg" class="img5"></div>
+
+    </div>
+    <div></div>
+    <div class="team">
+        <h1>THE TEAM</h1>
+        <h3>Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat modi atque
+            non id cum hic obcaecati. Placeat natus nobis, libero aliquid corporis alias inventore eveniet officia
+            ipsa numquam omnis</h3></br>
+        <h3> excepturi facilis! Exercitationem sint unde sapiente sed, laudantium repellendus
+            excepturi quaerat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid unde veniam quos
+            quasi omnis id odit, obcaecati labore doloremque non repudiandae dolorem repellendus officia iure
+            architecto laboriosam quibusdam quo eligendi.</h3>
+
+    </div>
+    <div class="container">
+        <footer class="footer">
+            <div id="footer">
+                Brand Name
+            </div>
+            <div class="adrs">
+                <h5>Address: 100 tenth avenue ,new york city,ny1001<br>for booking : (044) 0173 </h5>
+            </div>
+            <div id="div">
+                <a href="https://facebook.com"> <img src="img/fb2.jpg"  class="fb" height="30px"></a>
+                <a href="https://twitter.com"> <img src="img/twitter.jpg"  class="twit" height="30px"></a>
+                <a href="https://hangout.com"> <img src="img/linkin.jpg" class="hang" height="30px"></a>
+                <a href="https://google.com"> <img src="img/g+.png"  class="google" height="30px"></a>
+                <a href="https://instagram.com"> <img src="img/insta.png"  class="insta" height="29px"></a>
+            </div>
+            <div class="opening">
+                <div class="h4">
+                    <h4>OPENING HOURS </h4>
+                </div>
+                <div class="h6">
+                    <h6>MONDAY - FRIDAY ; 11:20 AM-2:00PM </h6>
+                </div>
+                <div class="h7">
+                    <h6>SATURDAY - SUNDAY ; 4:30 AM-10:00PM </h6>
+                </div>
+                <div class="h8">
+                    <h6>MONDAY - FRIDAY ; 5:30 AM-11:00PM </h6>
+                </div>
+            </div>
+            <div class="box">
+            <div class="box1">
+                <h3> SUBSCRIBE TO OUR CONTENTS
+            </div>
+            <div class="box2"> <input type="text"  class="input" > <button class="btn" >SUBSCRIBE</button> </div>
+            <div class="box3">
+                <h6> Lorem ipsum dolor sit tetur adipisicing elit Quis, esse, obcaecati ut officia
+                    </h6>
+            </div>
+</div>
+        </footer>
+    </div>
+    <div class="end"> care@brand,com </div>
+
+</body>
+<script>
+    $('.text1').click(function () {
+        $('.text2').toggle();
+    })
+</script>
+
+</html>
